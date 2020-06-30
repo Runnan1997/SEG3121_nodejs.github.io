@@ -1,0 +1,84 @@
+<html>
+  <head>
+    <title>Questionnaire</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+
+    <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+
+     <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  
+  <body>
+
+    <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+      <a class="navbar-brand" href="http://localhost:3000/niceSurvey">Survey</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="https://runnan1997.github.io/seg3125.github.io/index.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://localhost:3000/niceSurvey">Survey</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.fido.ca/">Fido's Official Website</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+	
+	<div class="container-md p-3 my-3 border bg-dark text-white" id="survey">
+    <h1>Survey</h1>
+    <form>
+      Name: <input type="text" name="fruit" placeholder="Please enter your name..." required />
+      <br>
+      <br>
+      <h2>Are you: </h2>
+      <input type="radio" name="sex" value="male">  Male<br>
+      <input type="radio" name="sex" value="female">  Female<br>
+      <input type="radio" name="sex" value="others" >  Others<br>
+      <br>
+      <h2>What is your age? </h2>
+      <input type="radio" name="age" value="15-25">  15 ~ 25<br>
+      <input type="radio" name="age" value="25-35">  25 ~ 35<br>
+      <input type="radio" name="age" value="above 40" >  above 40<br>
+      <br>
+      <h2>Which of the following pages are you dissatisfied with, you can choose one or more:</h2>
+		  <input type="checkbox" name="color" value="Fido Home Page"> Fido Home Page<br>
+		  <input type="checkbox" name="color" value="Fido Shopping Page"> Fido Shopping Page<br>
+      <input type="checkbox" name="color" value="Fido Support Page"> Fido Support Page<br>
+      <br>
+      <h2>Which part do you think we should adjust?</h2>
+      <select name="animal">
+			  <option value="Font size" selected="selected">Font size</option>
+			  <option value="Picture size">Picture size</option>
+			  <option value="Web layout">Web layout</option>
+      </select>
+      <br>
+      <br>
+      <h2>Comments</h2>
+      <input type="text" name="comments" style="width:100%; height:200px;" placeholder="Please enter your comments..." required />
+      <br>
+      <br>
+      <button type="submit" class="btn btn-warning" id="bb">Submit</button>
+      <p id="thanks"></p>
+    </form>
+    </div>
+	<script src="/assets/action.js"></script>
+  </body>
+</html> 
